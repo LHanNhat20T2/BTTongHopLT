@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".School">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--    Header-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layersingupboder"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_ute" />
+
+                <ImageView
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_mapute" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="arial,sans-serif"
+            android:text="@string/txtschoolute"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--         btn   Trang web -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="#EEE9E9"
+                android:padding="1dp"
+                android:text="@string/txtweb"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <!--         btn   chỉ đường -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="#EEE9E9"
+                android:padding="1dp"
+                android:text="@string/txtthread"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <!--         btn  lưu -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="#EEE9E9"
+                android:padding="1dp"
+                android:text="@string/txtsave"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <!--         btn gọi -->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#EEE9E9"
+                android:padding="1dp"
+                android:text="@string/txtcall"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="14dp"
+            android:background="#DCDCDC"
+            />
+
+        <!--mo ta-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtmota"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="-16dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtWikipedia"
+                android:textAlignment="inherit"
+                android:textColor="#1a0dab"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="196dp"
+                tools:layout_editor_absoluteY="-1dp" />
+        </RelativeLayout>
+        <!--       body  Dia chi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtaddress"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontextadd"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <!--time-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txttime"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontexttime1"
+                android:textColor="#00CD66"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontexttime2"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+        <!--dienthoai-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtphone"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontextphone"
+                android:textColor="#1a0dab"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <!--ngaythanhlap-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtestablishment"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontextablishment"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <!--hieu truong-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtprincipal"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontextprincipal"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!--loai-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txttype"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontexttype"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!--thanh vien cua-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtmember"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontextmember"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!--ten khac-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtanother"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="arial,sans-serif"
+                android:text="@string/txtcontext"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="arial,sans-serif"
+            android:text="@string/txtnvt"
+            android:textColor="#1a0dab"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
